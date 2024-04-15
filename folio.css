@@ -17,7 +17,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #051129;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,6 +166,7 @@ body{
     /* background: 50%; */
     background-repeat: no-repeat;
     width: 600px;
+    
 }
 
 .about-text h2{
@@ -189,8 +190,42 @@ body{
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
-    
 }
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title span{
+    color: #0ef;
+}
+
+.container{
+    padding: 90px;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
 
 @keyframes slideRight{
     0% {
