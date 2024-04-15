@@ -28,6 +28,9 @@ body{
     font-size: 25px;
     color: #fff;
     text-decoration: none;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a{
@@ -38,6 +41,8 @@ body{
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: sildeTop .5s ease forwards;
 }
 .navbar a:hover{
     color: #0ef;
@@ -62,6 +67,9 @@ body{
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideBottom .1s ease forwards;
+    animation-delay: .7s;
 }
 
 .home-content h3 span{
@@ -122,4 +130,38 @@ body{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan,0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan
+}
+
+@keyframes slideRight{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes sildeTop{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
